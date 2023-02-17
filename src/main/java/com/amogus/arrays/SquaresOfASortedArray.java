@@ -5,7 +5,8 @@ package com.amogus.arrays;
  * 977. Squares of a Sorted Array
  * https://leetcode.com/problems/squares-of-a-sorted-array/
  * ==
- * Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+ * Given an integer array nums sorted in non-decreasing order,
+ * return an array of the squares of each number sorted in non-decreasing order.
  * ==
  * Example 1:
  * ==
@@ -20,23 +21,23 @@ package com.amogus.arrays;
  */
 public class SquaresOfASortedArray {
 
-    public static int[] calculate(int[] nums) {
+    public int[] sortedSquares(int[] nums) {
         int lPointer = 0;
         int rPointer = nums.length - 1;
-        int[] sortedIntArray = new int[nums.length];
+        int[] sortedArray = new int[nums.length];
 
-        for (int i = nums.length - 1; i >= 0; i--) {
+        for(int i = nums.length - 1; i >= 0; i--) {
             int left = Math.abs(nums[lPointer]);
             int right = Math.abs(nums[rPointer]);
 
             if (left > right) {
-                sortedIntArray[i] = left * left;
+                sortedArray[i] = left * left;
                 lPointer++;
             } else {
-                sortedIntArray[i] = right * right;
+                sortedArray[i] = right * right;
                 rPointer--;
             }
         }
-        return sortedIntArray;
+        return sortedArray;
     }
 }
