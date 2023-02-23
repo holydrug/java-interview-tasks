@@ -17,18 +17,19 @@ package com.amogus.arrays;
  * Output: 2
  */
 public class MaxConsecutiveOnes {
-    public static int findMaxConsecutiveOnes(int[] nums) {
+    public int findMaxConsecutiveOnes(int[] nums) {
         int countMax = 0;
         int count = 0;
 
-        for(int i = 0; i < nums.length; i++) {
-            if(nums[i] == 1) {
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 1) {
                 count++;
             } else {
-                countMax = Math.max(count, countMax);
+                countMax = Math.max(countMax, count);
                 count = 0;
             }
         }
-        return Math.max(count, countMax);
+
+        return Math.max(countMax, count);
     }
 }
