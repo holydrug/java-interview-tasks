@@ -24,21 +24,23 @@ package com.amogus.arrays;
  * Only 1771 contains an even number of digits.
  */
 public class FindNumbersWithEvenNumberOfDigits {
-    public static int findNumbers(int[] nums) {
-        int count = 0;
+    public int findNumbers(int[] nums) {
+        int evenCounter = 0;
 
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             int delimeter = 10;
-            int countOfDelimeter = 0;
-            while(nums[i] / delimeter != 0) {
+            int countOfDelimeters = 0;
+
+            while (nums[i] / delimeter != 0) {
                 delimeter = delimeter * 10;
-                countOfDelimeter++;
+                countOfDelimeters++;
             }
 
-            if(countOfDelimeter % 2 == 1) {
-                count++;
+            if (countOfDelimeters % 2 == 1) {
+                evenCounter++;
             }
         }
-        return count;
+
+        return evenCounter;
     }
 }
