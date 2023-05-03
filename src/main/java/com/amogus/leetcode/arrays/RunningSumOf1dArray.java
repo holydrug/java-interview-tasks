@@ -1,4 +1,4 @@
-package com.amogus.arrays;
+package com.amogus.leetcode.arrays;
 
 /**
  * 1480. Running Sum of 1d Array

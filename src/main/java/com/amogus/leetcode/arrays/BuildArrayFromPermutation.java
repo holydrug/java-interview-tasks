@@ -1,4 +1,4 @@
-package com.amogus.arrays;
+package com.amogus.leetcode.arrays;
 
 /**
  * 1920. Build Array from Permutation

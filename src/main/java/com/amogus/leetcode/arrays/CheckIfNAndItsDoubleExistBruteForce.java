@@ -1,4 +1,4 @@
-package com.amogus.arrays;
+package com.amogus.leetcode.arrays;
 
 /**
  * 1346. Check If N and Its Double Exist

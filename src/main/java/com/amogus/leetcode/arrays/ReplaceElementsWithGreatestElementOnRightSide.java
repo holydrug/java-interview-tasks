@@ -1,4 +1,4 @@
-package com.amogus.arrays;
+package com.amogus.leetcode.arrays;
 
 /**
  * 1299. Replace Elements with Greatest Element on Right Side

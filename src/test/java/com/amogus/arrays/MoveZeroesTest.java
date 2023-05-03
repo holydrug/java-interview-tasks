@@ -1,5 +1,6 @@
 package com.amogus.arrays;
 
+import com.amogus.leetcode.arrays.MoveZeroes;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

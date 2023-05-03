@@ -1,4 +1,4 @@
-package com.amogus.arrays;
+package com.amogus.leetcode.arrays;
 
 /**
  * 747. Largest Number At Least Twice of Others

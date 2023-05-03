@@ -1,4 +1,4 @@
-package com.amogus.arrays;
+package com.amogus.leetcode.arrays;
 
 import java.util.Arrays;
 import java.util.HashMap;

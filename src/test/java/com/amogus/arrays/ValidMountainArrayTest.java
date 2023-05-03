@@ -1,5 +1,6 @@
 package com.amogus.arrays;
 
+import com.amogus.leetcode.arrays.ValidMountainArray;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

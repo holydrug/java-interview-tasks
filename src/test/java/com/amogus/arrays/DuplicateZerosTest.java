@@ -1,5 +1,6 @@
 package com.amogus.arrays;
 
+import com.amogus.leetcode.arrays.DuplicateZeros;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
