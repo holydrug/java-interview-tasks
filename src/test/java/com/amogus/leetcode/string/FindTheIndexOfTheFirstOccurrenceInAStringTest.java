@@ -40,7 +40,7 @@ class FindTheIndexOfTheFirstOccurrenceInAStringTest {
     @Test
     void prefixFunc() {
         String input = "abcabd";
-        int[] output = new int[] {0, 0, 1, 2};
+        int[] output = new int[] {0, 0, 0, 1, 2, 0};
 
         int[] result = underTest.prefixFunc(input);
 
