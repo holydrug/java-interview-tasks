@@ -35,4 +35,15 @@ class SlidingWindowMaximumDequeSlidingWindowTest {
 
         Assertions.assertArrayEquals(output, result);
     }
+
+    @Test
+    void maxSlidingWindow3() {
+        int[] input = new int[]{1, -1};
+        int k = 1;
+        int[] output = new int[]{1};
+
+        int[] result = underTest.maxSlidingWindow(input, k);
+
+        Assertions.assertArrayEquals(output, result);
+    }
 }

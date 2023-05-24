@@ -1,4 +1,4 @@
-package com.amogus.leetcode.arrays.impl.sliding.window;
+package com.amogus.leetcode.arrays.impl.dynamic.programming;
 
 import com.amogus.leetcode.arrays.tasks.SlidingWindowMaximum;
 
@@ -33,29 +33,45 @@ import java.util.LinkedList;
  * Input: nums = [1], k = 1
  * Output: [1]
  */
-public class SlidingWindowMaximumDequeSlidingWindow implements SlidingWindowMaximum {
+public class SlidingWindowMaximumDynamicProgramming implements SlidingWindowMaximum {
     @Override
     public int[] maxSlidingWindow(int[] nums, int k) {
+        MonotonicQueue monotonicQueue = new MonotonicQueue();
         int[] result = new int[nums.length - k + 1];
         int resultIndex = 0;
 
-        Deque<Integer> deque = new LinkedList<>();
         for (int i = 0; i < nums.length; i++) {
+            monotonicQueue.push(nums[i]);
 
-            if (!deque.isEmpty() && i - k == deque.peekFirst()) {
-                deque.pollFirst();
+            if (i >= k - 1) {
+                result[resultIndex++] = monotonicQueue.max();
+
+                if (monotonicQueue.max() == nums[i - k + 1]) {
+                    monotonicQueue.pop();
+                }
             }
+        }
 
-            while (!deque.isEmpty() && nums[i] > nums[deque.peekLast()]) {
+        return result;
+    }
+
+    class MonotonicQueue {
+        Deque<Integer> deque = new LinkedList<>();
+
+        public void push(int elem) {
+            while (!deque.isEmpty() && elem > deque.peekLast()) {
                 deque.pollLast();
             }
 
-            deque.offerLast(i);
-
-            if (i >= k - 1) {
-                result[resultIndex++] = nums[deque.peekFirst()];
-            }
+            deque.offerLast(elem);
         }
-        return result;
+
+        public void pop() {
+            deque.pollFirst();
+        }
+
+        public int max() {
+            return deque.getFirst();
+        }
     }
 }
