@@ -1,6 +1,6 @@
 package com.amogus.arrays;
 
-import com.amogus.leetcode.arrays.SortArrayByParity;
+import com.amogus.leetcode.arrays.impl.pointers.two.SortArrayByParityTwoPointers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 class SortArrayByParityTest {
-    private SortArrayByParity underTest;
+    private SortArrayByParityTwoPointers underTest;
 
     @BeforeEach
     public void init() {
-        underTest = new SortArrayByParity();
+        underTest = new SortArrayByParityTwoPointers();
     }
 
     @Test

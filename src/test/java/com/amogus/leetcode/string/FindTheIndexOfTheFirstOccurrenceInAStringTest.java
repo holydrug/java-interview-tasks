@@ -1,18 +1,17 @@
 package com.amogus.leetcode.string;
 
+import com.amogus.leetcode.string.impl.pointers.two.FindTheIndexOfTheFirstOccurrenceInAStringKMP;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class FindTheIndexOfTheFirstOccurrenceInAStringTest {
 
-    private FindTheIndexOfTheFirstOccurrenceInAString underTest;
+    private FindTheIndexOfTheFirstOccurrenceInAStringKMP underTest;
 
     @BeforeEach
     public void init() {
-        underTest = new FindTheIndexOfTheFirstOccurrenceInAString();
+        underTest = new FindTheIndexOfTheFirstOccurrenceInAStringKMP();
     }
 
     @Test
