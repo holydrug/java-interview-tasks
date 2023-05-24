@@ -1,4 +1,6 @@
-package com.amogus.leetcode.arrays.sliding.window;
+package com.amogus.leetcode.arrays.impl.sliding.window;
+
+import com.amogus.leetcode.arrays.tasks.MinimumSizeSubarraySum;
 
 /**
  * 209. Minimum Size Subarray Sum
@@ -20,7 +22,9 @@ package com.amogus.leetcode.arrays.sliding.window;
  * Input: target = 11, nums = [1,1,1,1,1,1,1,1]
  * Output: 0
  */
-public class MinimumSizeSubarraySum {
+public class MinimumSizeSubarraySumImpl implements MinimumSizeSubarraySum {
+
+    @Override
     public int minSubArrayLen(int target, int[] nums) {
         int result = Integer.MAX_VALUE;
         int currentWindow = 0;

@@ -1,16 +1,17 @@
 package com.amogus.leetcode.arrays.sliding.window;
 
+import com.amogus.leetcode.arrays.impl.sliding.window.MinimumSizeSubarraySumImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class MinimumSizeSubarraySumTest {
+class MinimumSizeSubarraySumImplTest {
 
-    private MinimumSizeSubarraySum underTest;
+    private MinimumSizeSubarraySumImpl underTest;
 
     @BeforeEach
     public void init() {
-        underTest = new MinimumSizeSubarraySum();
+        underTest = new MinimumSizeSubarraySumImpl();
     }
 
     @Test
