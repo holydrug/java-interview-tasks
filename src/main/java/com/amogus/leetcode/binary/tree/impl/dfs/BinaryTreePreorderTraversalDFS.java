@@ -1,8 +1,7 @@
 package com.amogus.leetcode.binary.tree.impl.dfs;
 
-import com.amogus.leetcode.binary.tree.impl.dfs.dto.TreeNode;
-import com.amogus.leetcode.binary.tree.task.BinaryTreePreorderTraversal;
 
+import com.amogus.leetcode.binary.tree.task.BinaryTreePreorderTraversal;
 
 import java.util.ArrayList;
 import java.util.List;
